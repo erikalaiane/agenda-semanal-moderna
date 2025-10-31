@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Semanal Moderna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Navegação por Abas -->
+            <nav class="tabs">
+                <button class="tab active" data-tab="soph">Soph</button>
+                <button class="tab" data-tab="decores">Decores</button>
+                <button class="tab" data-tab="nome">Nome</button>
+                <button class="user-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Barra de Busca -->
+            <div class="search-bar">
+                <input type="text" placeholder="Resultados da Busca" class="search-input">
+                <button class="search-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Dias da Semana -->
+            <div class="weekdays">
+                <button class="day" data-day="dom">Dom</button>
+                <button class="day active" data-day="seg">Seg</button>
+                <button class="day active" data-day="qua">Qua</button>
+                <button class="day active" data-day="qui">Qui</button>
+                <button class="day active" data-day="sex">Sex</button>
+                <button class="day active" data-day="sab">Sáb</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
